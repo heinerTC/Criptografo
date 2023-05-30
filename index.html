@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="/reset.css"> 
+    <link rel="stylesheet" href="/style.css"> 
+</head>
+<body>
+    <header>
+       <div class="img-logo">
+        <img class="logo" src="/img/mask.png" alt="logo del Criptográfo">
+       </div>
+    </header>
+    <div class="container">
+        <h1>Criptografo</h1>
+        <br>
+        <textarea id="mensaje" class="text-area" placeholder="Ingresa tu mensaje"></textarea>
+        <button class="button" onclick="encriptar()">Encriptar</button>
+        <button class="button" onclick="desencriptar()">Desencriptar</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2>Resultado:</h2>
+        <br>
+        <section>
+            <textarea id="resultado" class="text-area dato" readonly></textarea>
+            <div>
+                <button class="button copiar" onclick="copiarTexto()">Copiar texto</button>
+            </div>
+
+
+        </section>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
